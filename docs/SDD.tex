@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Software Design Document}
+\rfoot{\thepage}
+
+% Title Info
+\title{\textbf{Software Design Document (SDD)} \\ \vspace{0.5cm} \large Southern California Edison Virtual Reality Training Program}
+\author{Jose Holguin, Alyssa Tu, Andrew Wun, Hyun Seok Song}
+\date{April 1, 2025}
+
+\begin{document}
+
+% Cover Page
+\maketitle
+\newpage
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+% Versions Table
+\section*{Version History}
+\begin{longtable}{|p{1.5cm}|p{2cm}|p{3.5cm}|p{2cm}|}
+\hline
+\textbf{Name} & \textbf{Date} & \textbf{Revisions} & \textbf{Version} \\
+\hline
+Group 7 & May 2, 2025 & Snapshot 1 (materials needed and first draft/section 1) & Version 1.0 \\
+\hline
+Group 7 & May 3, 2025 & Snapshot 2 (added model design details) & Version 1.1 \\
+\hline
+Group 7 & May 4, 2025 & Snapshot 3 (unity implementation details) & Version 1.2 \\
+\hline
+Group 7 & May 5, 2025 & Snapshot 4 (final product and added future implementation ideas) & Version 1.3 \\
+\hline
+% Add more as needed
+\end{longtable}
+\newpage
+
+% Sections
+
+\section{Introduction}
+\subsection{Purpose}
+The purpose of this software is to help train Southern California Edision(SCE) 3rd party contractors. 
+The software is called Virtual Reality Training Application(VRTA).
+It is an interactive training simulation software for Southern California Edison. 
+The initial issue given at hand was that SCE sources contractors not trained under their practices. 
+This software will help address the issue by training them with the skills from SCE.
+
+\subsection{Intended Audience}
+This document is intended for software developers, advisors, and SCE sponsors who need an overview and understanding of our project. 
+The table of contents has the sections for what specifics the reader would like to know about of our project. 
+Section 2 goes more in depth over the interface of our project and how the user will interact with the software.
+
+\subsection{Overview}
+Our first objective in this document is to layout the 
+materials needed, frameworks, and dependencies to structure our project.
+Our second objective in this project was to start working on the models using Autodesk Maya and Blender.
+The third objective was Unity implementation and adding functionality to the models for the virtual reality.
+Lastly we went over our finished product, talked about extra features added like audio, and went over
+what future features could be added if we continued to work on it.
+
+\section{System Architecture}
+\subsection{Overview of Architecture}
+The two main componens of this software is Unity Engine and Blender.
+The Unity engine is a development platform that allows users to create gaming programs in 2D and 3D, while also 
+being able to mimic physics. We had to create our models to use in this program software
+so thats where Blender comes in which allows users to create 3D models, simulation renders, or even
+animations. Blender was used to create the specific SCE equipment and "world" 
+that the training would be working in. 
+
+\subsection{Workflow and Site Breakdown}
+Since our second objective is designing models, we spent time looking around in real world environments and talking talking 
+to SCE employees for designing these models. We wanted to make sure we were creating a close to real training program.
+Afterwards we needed Unity for the VR interaction functionality.
+The user would control their own movements and the models used.
+The objects the user would control would be the equipment and the hands-on task.
+The user would then have to control the buttons to move around. Since teleportation was used for movement,
+that makes button pressing the preferred execution as it is easy and trivial. A software called Oculus
+allows developers to view whats being seen through their computer, 
+this would grant easier access to what the user is doing when testing. Our last objective was adding extra features like
+scripts, audios, and extra assets. All of our assets and audio files are stored in the Unity projects folder.
+
+
+\section{User Interface}
+\subsection{UI}
+\begin{enumerate}
+    \item Main Menu
+    \begin{itemize}
+        \item Scenes
+        \item Restart
+        \item Task
+        \item Buttons (Previous/Next)
+    \end{itemize}
+
+    \item Inventory
+    \begin{itemize}
+        \item Slot
+        \item UI
+        \item Dropped Items
+        \item Controls
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Database Explanation}
+Model assets, audio clips, and scripts are stored within the project itself on Unity.
+As game starts and the user is put into the virtual reality with the use of a Meta Quest headset.
+All models are grabbed from the files and loaded up into the game world. Specific visuals and audios
+are put in place when there is a trigger. Thats when the scripts come in and implement these updates dynamically.
+
+\section{Glossary}
+\begin{longtable}{|p{4cm}|p{10cm}|}
+\hline
+\textbf{Term} & \textbf{Definition} \\
+\hline
+UI & User Interface \\
+SCE & Southern California Edison \\
+VRTA & Virtual Reality Training Application \\
+% Add more as needed
+\hline
+\end{longtable}
+
+\section{References}
+\begin{thebibliography}{9}
+    \bibitem{bliz2022}
+    Bliz Studio.  
+    \textit{Unity VR XR Interaction Toolkit Grabbable UI Canvas Tablet} [Video].  
+    YouTube, September 26, 2022.  
+    \url{https://www.youtube.com/watch?v=TCixKyOGTRU}
+    
+    \bibitem{bliz2022}
+    Bliz Studio.  
+    \textit{Unity VR XR Interaction Toolkit Grabbable UI Canvas Tablet} [Video].  
+    YouTube, September 26, 2022.  
+    \url{https://www.youtube.com/watch?v=TCixKyOGTRU}
+
+    \end{thebibliography}
+
+\end{document}
