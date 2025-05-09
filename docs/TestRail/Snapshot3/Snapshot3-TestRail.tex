@@ -1,0 +1,141 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\geometry{margin=1in}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[table]{xcolor}
+
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\title{TestRail Summary Report: Snapshot 3}
+\author{Jose Holguin, Andrew Wun, Alyssa Tu, Hyun Seok Song}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Overview}
+This document summarizes the test cases executed for 3D models creation, menu functionality, Smart Navigator installation, and inventory access within the Unity environment.
+
+\section{Snapshot Summary Image}
+
+\includegraphics[width=1\linewidth]{Screenshot 2025-05-08 at 10.38.20 PM.png}
+
+\subsection{Test Case \#1}
+\textbf{Name:} 3D Models Creation (Trees, Houses, Sidewalks)\\
+\textbf{Type:} Functional \\
+\textbf{Priority:} Medium \\
+\textbf{Estimated Time:} 10 minutes \\
+\textbf{Actual Time:} 10 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+\item Unity project is open.
+\item VR headset is connected and ready.
+\item The scene contains a menu screen with three buttons.
+\item Unity is in Play mode.
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & Open Unity Hub and select the Unity project containing the scene (e.g., BackyardScene). & The Unity project should open without any issues, and the relevant scene should load successfully, showing no errors. & The Unity project opened without any issues, and the relevant scene loaded successfully, showing no errors. \\
+2 & In the Unity editor, locate the Scene tab and load the scene containing the 3D models, such as BackyardScene. & The scene should load and display without any issues or error messages. & The scene loaded and displayed without any issues or error messages. \\
+3 & In the Scene view, navigate to where the 3D models (trees, houses, sidewalks) are located. & The 3D models (trees, houses, sidewalks) should appear clearly and be visible in the scene. & The 3D models (trees, houses, sidewalks) appeared clearly and were visible in the scene. \\
+4 & Observe the scale and placement of the models within the scene. & The models should be positioned on the ground, not floating or misaligned, and should have appropriate scale in relation to one another. & The models were positioned on the ground, not floating or misaligned, and had appropriate scale in relation to one another. \\
+\bottomrule
+\end{tabular}
+
+\subsection{Test Case \#2}
+\textbf{Name:} User Interface and Menu Screen Functionality in VR \\
+\textbf{Type:} Functional \\
+\textbf{Priority:} High \\
+\textbf{Estimated Time:} 5 minutes \\
+\textbf{Actual Time:} 5 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+\item Unity project is open and running in Play mode.
+\item VR headset is properly connected and functioning.
+\item The main menu and VR interaction buttons are implemented in the scene.
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & Enter Play Mode in Unity and put on the VR headset. & User is placed in the VR environment. & User is placed in the VR environment. \\
+2 & Look around the VR scene to locate the main menu screen. & The menu screen appears clearly in view with 3 visible buttons: Smart Navigator Installation, Teleport to Task Location, and Inventory Access. & The menu screen appeared clearly in view with 3 visible buttons: Smart Navigator Installation, Teleport to Task Location, and Inventory Access. \\
+3 & Point your VR controller at the Smart Navigator Installation button. & The button highlights or responds visually (e.g., color change or glow). & The button highlighted/responded visually (e.g., color change or glow). \\
+4 & Click the Smart Navigator Installation button using the controller. & A new scene or interaction for installing the Smart Navigator begins. & A new scene/interaction for installing the Smart Navigator began. \\
+5 & Return to the main menu and click the Teleport to Task Location button. & User is instantly moved to the area where the task takes place. & User is instantly moved to the area where the task takes place. \\
+6 & Return to the menu again and click the Inventory Access button. & An inventory interface appears, allowing access to stored equipment. & An inventory interface appeared, allowing access to stored equipment. \\
+\bottomrule
+\end{tabular}
+
+\subsection{Test Case \#3}
+\textbf{Name:} Smart Navigator Installation in VR \\
+\textbf{Type:} Functional \\
+\textbf{Priority:} High \\
+\textbf{Estimated Time:} 5 minutes \\
+\textbf{Actual Time:} 8 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+\item The Unity project is open.
+\item The Smart Navigator model and hotstick are correctly placed in the scene.
+\item VR headset and controllers are connected and working.
+\item The project is running in Play Mode.
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & In VR, navigate to the Smart Navigator Installation area from the menu screen. & The user is taken to the designated Smart Navigator task area. & The user was taken to the designated Smart Navigator task area. \\
+2 & Look around to locate the Smart Navigator and hotstick in the scene. & Both objects are clearly visible in the VR view. & Both objects were clearly visible in the VR view. \\
+3 & Use the VR controller to reach out and grab the Smart Navigator. & The Smart Navigator attaches to the user's hand/controller. & The Smart Navigator attaches to the user's hand/controller. \\
+4 & Move the Smart Navigator toward the clamp on the hotstick. & The clamp area highlights or shows alignment feedback. & The clamp area highlights/shows alignment feedback. \\
+5 & Align and place the Smart Navigator onto the hotstick clamp. & The Navigator snaps into place and stays mounted. & The Navigator snaps into place and stays mounted. \\
+\bottomrule
+\end{tabular}
+
+\subsection{Test Case \#4}
+\textbf{Name:} Inventory Access in VR \\
+\textbf{Type:} Functional \\
+\textbf{Priority:} High \\
+\textbf{Estimated Time:} 5 minutes \\
+\textbf{Actual Time:} 5 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+\item Unity project is running in Play Mode.
+\item Menu screen is open in the VR environment.
+\item VR headset and controllers are connected and working.
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & From the menu screen, locate the Inventory Access button. & The Inventory Access button should be visible and highlighted on the VR menu screen. & The Inventory Access button was visible and highlighted on the VR menu screen. \\
+2 & Point the VR controller at the Inventory Access button and hover over it. & The button should highlight (e.g., color change or visual effect). & The button highlighted (e.g., color change or visual effect). \\
+3 & Press the trigger on the VR controller to select the Inventory Access button. & The inventory UI should appear in the VR environment, displaying a list of available items. & The inventory UI appeared in the VR environment, displaying a list of available items. \\
+4 & Look through the inventory and attempt to select an item by pointing at it with the VR controller and pressing the trigger. & The selected item should become highlighted, and a description or additional options for the item should appear. & The system did not allow the user to select an item from the inventory when pressing the trigger. \\
+\bottomrule
+\end{tabular}
+
+
+
+
+
+\end{document}
