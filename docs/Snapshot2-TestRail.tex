@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\geometry{margin=1in}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[table]{xcolor}
+
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\title{TestRail Summary Report: Snapshot 2}
+\author{Jose Holguin, Andrew Wun, Alyssa Tu, Hyun Seok Song}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Overview}
+This document summarizes the results of testing two key features in the Unity project: 3D Model Accuracy for the Polemaster and Smart Navigator models, and 3D Model Creation for trees, houses, and sidewalks.
+
+\section{Snapshot Summary Image}
+
+\includegraphics[width=1\linewidth]{Screenshot 2025-05-08 at 10.01.08 PM.png}
+
+\subsection{Test Case \#1}
+\textbf{Name:} 3D Models Creation (Trees, Houses, Sidewalks)\\
+\textbf{Type:} Functional \\
+\textbf{Priority:} Medium \\
+\textbf{Estimated Time:} 10 minutes \\
+\textbf{Actual Time:} 8 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+\item The Unity project is opened and active. 
+\item The scene with 3D models (e.g., BackyardScene) is loaded.
+\item Models for trees, houses, and sidewalks are already imported and placed in the scene. 
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & Open Unity Hub and select the Unity project containing the scene (e.g., "BackyardScene"). & The Unity project should open without any issues, and the relevant scene should load successfully, showing no errors. & The Unity project opened without any issues, and the relevant scene loaded successfully, showing no errors. \\
+2 & In the Unity editor, locate the "Scene" tab and load the scene containing the 3D models, such as "BackyardScene." & The scene should load and display without any issues or error messages. & The scene loaded and displayed without any issues or error messages. \\
+3 & In the Scene view, navigate to where the 3D models (trees, houses, sidewalks) are located. & The 3D models (trees, houses, sidewalks) should appear clearly and be visible in the scene. & The 3D models (trees, houses, sidewalks) appeared clearly and were visible in the scene. \\
+4 & Observe the scale and placement of the models within the scene. & The models should be positioned on the ground, not floating or misaligned, and should have appropriate scale in relation to one another. & The models were positioned on the ground, not floating or misaligned, and had appropriate scale in relation to one another. \\
+\bottomrule
+\end{tabular}
+
+\subsection{Test Case \#2}
+\textbf{Name:} 3D Model Accuracy (Polemaster, Smart Navigator) \\
+\textbf{Type:} Functional \\
+\textbf{Priority:} High \\
+\textbf{Estimated Time:} 5 minutes \\
+\textbf{Actual Time:} 5 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+\item The Unity project with the Polemaster and Smart Navigator models is open.
+\item The scene containing the Polemaster and Smart Navigator models is loaded.
+\item All necessary assets and materials for the models are available and properly applied.
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & Open Unity Hub and load the Unity project containing the scene with the Polemaster and Smart Navigator models. & The Unity project should open without any issues, and the correct scene should load. & The Unity project opened without any issues, and the correct scene loaded in. \\
+2 & In the Unity editor, locate the "Scene" tab and ensure the scene with the Polemaster and Smart Navigator models is loaded. & The scene should load correctly, displaying the models in the editor with no errors or missing assets. & The scene loaded correctly, displayed the models in the editor with no errors or missing assets. \\
+3 & In the Scene view, locate and select the Polemaster model. & The Polemaster model should be clearly visible, with the correct shape and details such as wires and LED indicators. & The Polemaster model was visible, but some details were incorrect; specifically, the wire colors did not match the expected appearance. \\
+4 & Observe the Polemaster model to ensure the materials (e.g., wires, LED indicators) are correctly applied. & The materials should appear as expected (correct wire colors, LEDs lit appropriately based on the state). & Materials were applied, but the wire colors were incorrect and did not match the expected design. LEDs lit appropriately based on the state. \\
+5 & In the Scene view, locate and select the Smart Navigator model. & The Smart Navigator model should be clearly visible with proper shape, details, and texture. & The Smart Navigator model is clearly visible with proper shape, details, and texture. \\
+6 & Compare the appearance of the Polemaster and Smart Navigator models to the reference photos. & The models should closely match the reference photos, with appropriate details, shapes, and colors. & Most of the models closely matched the reference photos, with appropriate details, shapes, and colors. Except for the wiring coloring. \\
+\bottomrule
+\end{tabular}
+
+
+
+
+\end{document}
