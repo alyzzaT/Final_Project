@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{lipsum}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{1em}{}
+
+\title{Snapshots}
+\author{Jose Holguin, Andrew Wun, Alyssa Tu, Hyeon Seok Song}
+\date{May 5, 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Snapshot 1}
+For our first objective we started the SRS and SDS with what our project will be needing in order to get started.
+The development tools introduced will be Unity and Visual Studio code where we will use these softwares to create the functionality for the training simulator.
+Since the goal is this project is to create a virtual training simulation, we will be using Blender and Autodesk maya for creating the models.
+The models need to be designed realistic enough to simulate a real world experience.
+For communication our group will be using discord and github. 
+\subsection{Development Tools}
+\begin{itemize}
+    \item Unity 
+    \item Microsoft Visual Studio Code
+\end{itemize}
+\subsection{3D Modeling}
+\begin{itemize}
+    \item Blender
+    \item Autodesk Maya
+\end{itemize}
+\subsection{Communication}
+\begin{itemize}
+    \item Discord
+    \item Github
+\end{itemize}
+
+\section{Snapshot 2}
+In our second objective we started using Autodesk Maya and Blender for 3D modeling.
+Our philosophy for the design around the models are meant to make it realistic.
+We want the users to feel like they are in a real world. We used realistic photos of neighborhoods as reference.
+Cosmetics aside, our other main objective was the pole master which is what controls the electrical wiring.
+We had to make sure the polemaster is designed and functions close to a real life polemaster. We had to get wiring colors right as every
+detail on the real life devices mattered.
+\subsection{3D Models Created}
+\begin{itemize}
+    \item Trees
+    \item Houses (backyard, porch)
+    \item Sidewalks (streetlights, electrical poles)
+    \item Polemaster (colors, lights, LEDS for different states)
+    \item Smart Navigator (tool used for keeping track of electricity flow)
+\end{itemize}
+
+\section{Snapshot 3}
+\subsection{Implementing 3D models functionality with Unity}
+For this objective, after creating the models, we needed to give them functionality. That is where Unity comes in. 
+Unity is used in our design specs as a game engine in which developers can create 2D, 3D, and VR games. This tool 
+can use our model assets in order to give them the real life simulation effect. 
+\subsection{Unity implementations}
+\begin{itemize}
+    \item User Interface and Menu Screen (3 buttons with each being a different task)
+    \item Smart Navigator installation (steps for installing and clamping it onto the hotstick)
+    \item Teleportation (for the user to immediately go to the task location)
+    \item Inventory screen (allows user to store equipment)
+\end{itemize}
+
+\section{Snapshot 4}
+\subsection{Final Touches and Future Implementations}
+Lastly, for this final section, we were able to test and implement extra features like audio and menu task. 
+For future features we would like to add more of SCE's training missions.
+We also would have liked to add difficulty options for missions to give harder or easier variants of task.
+\subsection{Extra Features}
+\begin{itemize}
+    \item Audio Effects when certain criterias are met (correct completions of task)
+    \item Menu Task Screen (screen to check of completed objectives like gathering equipment, preparation)
+\end{itemize}
+
+\end{document}
