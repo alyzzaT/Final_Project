@@ -70,8 +70,10 @@ To develop and run the SCE VR Training Simulation, the following are required:
 ---
 ### 🚀 Installation & Setup    
 
-#### 🔹 
-#### 🔹 
-#### 🔹 
+#### 🔹 In Unity, set up Meta Quest connection plug-in called Meta XR
+#### 🔹 On Meta Quest, make sure in player settings that the Unity project is listed as connected.
+#### 🔹 On Meta Quest app, enable developer mode.
+#### 🔹 Connect Meta Quest to computer through USB-C or your computers specs.
+#### 🔹 In Unity, build the project, then switch to Meta Quest and run the program.
 
 ---
