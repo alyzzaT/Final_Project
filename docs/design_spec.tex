@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Southern California Edison VR Training Simulation Design Spec}
+\author{Your Team Name}
+\date{May 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Overview}
+This document outlines the technical specifications for a Virtual Reality training tool developed for Southern California Edison.
+
+\section*{Frontend}
+The frontend is built with a simple HTML interface served by NGINX inside a Docker container. It connects to the backend API.
+
+\section*{Backend}
+The backend uses Python with Flask to serve RESTful endpoints. It handles logic for VR simulation data and is containerized with Docker.
+
+\section*{Deployment}
+We use Docker Compose to manage both the frontend and backend containers. The app runs locally on ports 3000 (frontend) and 5000 (backend).
+
+\end{document}
