@@ -1,0 +1,115 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\geometry{margin=1in}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[table]{xcolor}
+
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\title{TestRail Summary Report: Snapshot 4}
+\author{Jose Holguin, Andrew Wun, Alyssa Tu, Hyun Seok Song}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Overview}
+This document summarizes the test cases for Inventory Access, Audio Interaction, and Task Progress, all of which were successfully tested and met the expected results.
+
+\section{Snapshot Summary Image}
+
+\includegraphics[width=0.8\linewidth]{Screenshot 2025-05-08 at 11.05.28 PM.png}
+
+\subsection{Test Case \#1}
+\textbf{Name:} Inventory Access in VR \\
+\textbf{Type:} Functional \\
+\textbf{Priority:} High \\
+\textbf{Estimated Time:} 5 minutes \\
+\textbf{Actual Time:} 5 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+\item Unity project is running in Play Mode.
+\item Menu screen is open in the VR environment.
+\item VR headset and controllers are connected and working.
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & From the menu screen, locate the Inventory Access button. & The Inventory Access button should be visible and highlighted on the VR menu screen. & The Inventory Access button was visible and highlighted on the VR menu screen. \\
+2 & Point the VR controller at the Inventory Access button and hover over it. & The button should highlight (e.g., color change or visual effect). & The button highlighted (e.g., color change or visual effect). \\
+3 & Press the trigger on the VR controller to select the Inventory Access button. & The inventory UI should appear in the VR environment, displaying a list of available items. & The inventory UI appeared in the VR environment, displaying a list of available items. \\
+4 & Look through the inventory and attempt to select an item by pointing at it with the VR controller and pressing the trigger. & The selected item should become highlighted, and a description or additional options for the item should appear. & The system did not allow the user to select an item from the inventory when pressing the trigger. \\
+\bottomrule
+\end{tabular}
+
+
+\subsection{Test Case \#2}
+\textbf{Name:} Audio Interaction in VR \\
+\textbf{Type:} Functional \\
+\textbf{Priority:} High \\
+\textbf{Estimated Time:} 5 minutes \\
+\textbf{Actual Time:} 5 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+    \item Unity project is running in Play Mode.
+    \item Menu screen is open in the VR environment.
+    \item VR headset and controllers are connected and working.
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & Navigate to a section within the VR environment that includes sound or audio prompts (e.g., Smart Navigator installation or another task with sound). & The section should load successfully, and user should see objects or tasks designed to trigger sound effects, such as button clicks or task completions. & The section loaded successfully, and user saw objects/tasks designed to trigger sound effects, such as button clicks or task completions. \\
+2 & Interact with objects or tools that are designed to trigger sound effects (e.g., clicking on buttons, using tools). & Appropriate sound plays for each interaction: e.g., button clicks should sound like a button press, tools should make tool-specific sounds. & Appropriate sound played for each interaction: e.g., button clicks sounded like a button press, tools made tool-specific sounds. \\
+\bottomrule
+\end{tabular}
+
+\subsection{Test Case \#3}
+\textbf{Name:} Menu Task Screen: Task Progress in VR \#3 \\
+\textbf{Type:} Functional \\
+\textbf{Priority:} High \\
+\textbf{Estimated Time:} 10 minutes \\
+\textbf{Actual Time:} 10 minutes \\
+\textbf{Preconditions:} 
+\begin{itemize}
+    \item The Unity project is running in Play Mode.
+    \item The VR headset is on and functioning.
+    \item The menu screen is visible and active in the VR environment.
+    \item A task (e.g., Smart Navigator installation) has been started.
+\end{itemize}
+\textbf{Test Steps and Expected Results:} \\
+\rowcolors{2}{gray!10}{white}
+\begin{tabular}{@{} p{0.8cm} p{4.6cm} p{4.6cm} p{4.6cm} @{}}
+\toprule
+\textbf{Step} & \textbf{Action} & \textbf{Expected Result} & \textbf{Actual Result} \\
+\midrule
+1 & Start a task, such as Smart Navigator installation, from the menu. & The task should begin, and the task progress bar should update on the Menu Task Screen. & The task began, and the task progress bar updated on the Menu Task Screen. \\
+2 & Monitor the task's progress on the Menu Task Screen. & The screen should automatically update the progression bar with real-time progress. & The screen automatically updated the progression bar with real-time progress. \\
+3 & Complete the task. & Upon completion, the task should be marked as complete on the Menu Task Screen. & Upon completion, the task was marked as complete on the Menu Task Screen. \\
+4 & Repeat the process for multiple tasks. & Each task should have an accurate progress indicator that tracks the task's completion. & Each task had an accurate progress indicator that tracked the task's completion. \\
+\bottomrule
+\end{tabular}
+
+
+
+
+
+
+
+
+
+\end{document}
