@@ -19,15 +19,14 @@ The simulation was created to demonstrate how VR can enhance the training experi
 ## 📄 Documentation  
 The following documents are available in the project repository:
 
-**📁 doc/**  
-├── 📄 **Software Design Document (SDD)**  
-├── 📄 **Software Requirements Specification (SRS)**  
-├── 📄 **Design Specifications**  
-├── 📄 **Snapshot Objectives**  
-├── 📁 **Testrail/**  
-│   └── 📄 **Snapshot (2 to 4)**  
-└── 📁 **Workflow_Diagram/**  
-    └── 📄 **Workflow Diagram**
+- Software Design Document (SDD)  
+- Software Requirement Specification (SRS)  
+- README / User Manual  
+- Design Spec  
+- Docker-Compose  
+- Snapshot Objectives (Snapshot 1/2/3/4)  
+- TestRail Documents (Snapshot 2/3/4)  
+- Workflow Diagram
 
 > All documentation is available within the repository.
 
